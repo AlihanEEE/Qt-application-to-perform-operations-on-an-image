@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1183</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OOP_2_LabProject</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QGroupBox" name="groupBox_Input_Image">
+        <property name="minimumSize">
+         <size>
+          <width>400</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Source Image</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="Label_Source_Image">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>600</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="autoFillBackground">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Output_Image">
+        <property name="minimumSize">
+         <size>
+          <width>400</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Output Image</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="Label_Output_Image">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>600</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <property name="spacing">
+       <number>7</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Source">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Source</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QPushButton" name="Button_Source_Input">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Input</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Source_Export">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Exp</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="Button_Source_Clear">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Clr</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Output">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Output</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="Button_Output_Save">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Output_SaveAs">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>SvAs</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Output_ExportAs">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>ExAs</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Output_Clear">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Clr</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Output_Undo">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Undo</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="Button_Output_Redo">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Redo</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Color_Conversion">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string>Color Conversion</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="Button_Color_RGB2HSV">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>HSV</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="Button_Color_RGB2Grey">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GRY</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Segmentation">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Segmentation</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="Button_Seg_ChanVese">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>CV</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Seg_Otsu">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>OT</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="Button_Seg_Morp">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>MRP</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_EdgeDetection">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Edge Detection</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="Button_Edge_Scharr">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>SC</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Edge_Roberts">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>RB</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Button_Edge_Sobel">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>SB</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignLeft">
+          <widget class="QPushButton" name="Button_Edge_Prewitt">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>PR</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1183</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuExport_As">
+     <property name="title">
+      <string>Export As</string>
+     </property>
+     <addaction name="actionSource_menuExport_As"/>
+     <addaction name="actionOutput_menuExport_As"/>
+    </widget>
+    <addaction name="actionOpen_Source"/>
+    <addaction name="actionSave_Output"/>
+    <addaction name="actionSave_As_Output"/>
+    <addaction name="menuExport_As"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuClear">
+     <property name="title">
+      <string>Clear</string>
+     </property>
+     <addaction name="actionSource_2"/>
+     <addaction name="actionOutput_2"/>
+    </widget>
+    <addaction name="menuClear"/>
+    <addaction name="actionUndo_Output"/>
+    <addaction name="actionRedo_Output"/>
+   </widget>
+   <widget class="QMenu" name="menuSegmentation">
+    <property name="title">
+     <string>Segmentation</string>
+    </property>
+    <addaction name="actionChan_Vese_Segmentation"/>
+    <addaction name="actionChan_Vese_Segmentation_2"/>
+    <addaction name="actionChan_Vese_Segmentation_3"/>
+   </widget>
+   <widget class="QMenu" name="menuEdge_Detection">
+    <property name="title">
+     <string>Edge Detection</string>
+    </property>
+    <addaction name="actionScharr"/>
+    <addaction name="actionRoberts"/>
+    <addaction name="actionSobel"/>
+    <addaction name="actionPrewit"/>
+   </widget>
+   <widget class="QMenu" name="menuColor_Conversion">
+    <property name="title">
+     <string>Color Conversion</string>
+    </property>
+    <addaction name="actionRGB_to_HSV"/>
+    <addaction name="actionRGB_Grey"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuColor_Conversion"/>
+   <addaction name="menuEdge_Detection"/>
+   <addaction name="menuSegmentation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRGB_to_HSV">
+   <property name="text">
+    <string>RGB -&gt; HSV</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionRGB_Grey">
+   <property name="text">
+    <string>RGB -&gt; Grey</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionScharr">
+   <property name="text">
+    <string>Scharr</string>
+   </property>
+  </action>
+  <action name="actionRoberts">
+   <property name="text">
+    <string>Roberts</string>
+   </property>
+  </action>
+  <action name="actionSobel">
+   <property name="text">
+    <string>Sobel</string>
+   </property>
+  </action>
+  <action name="actionPrewit">
+   <property name="text">
+    <string>Prewitt</string>
+   </property>
+  </action>
+  <action name="actionChan_Vese_Segmentation">
+   <property name="icon">
+    <iconset>
+     <normaloff>ChanVese.png</normaloff>ChanVese.png</iconset>
+   </property>
+   <property name="text">
+    <string>Chan-Vese Segmentation</string>
+   </property>
+  </action>
+  <action name="actionChan_Vese_Segmentation_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>otsu.png</normaloff>otsu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Multi-Otsu Segmentation</string>
+   </property>
+  </action>
+  <action name="actionChan_Vese_Segmentation_3">
+   <property name="icon">
+    <iconset>
+     <normaloff>morphological.png</normaloff>morphological.png</iconset>
+   </property>
+   <property name="text">
+    <string>Morphological Snakes</string>
+   </property>
+  </action>
+  <action name="actionOpen_Source">
+   <property name="icon">
+    <iconset>
+     <normaloff>open_source.png</normaloff>open_source.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Source</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave_Output">
+   <property name="icon">
+    <iconset>
+     <normaloff>Save-PNG-Image.png</normaloff>Save-PNG-Image.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Output</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As_Output">
+   <property name="icon">
+    <iconset>
+     <normaloff>save_as.png</normaloff>save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As Output</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>exit.png</normaloff>exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F4</string>
+   </property>
+  </action>
+  <action name="actionSource_menuExport_As">
+   <property name="icon">
+    <iconset>
+     <normaloff>input.png</normaloff>input.png</iconset>
+   </property>
+   <property name="text">
+    <string>Source</string>
+   </property>
+  </action>
+  <action name="actionOutput_menuExport_As">
+   <property name="icon">
+    <iconset>
+     <normaloff>output.png</normaloff>output.png</iconset>
+   </property>
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </action>
+  <action name="actionUndo_Output">
+   <property name="icon">
+    <iconset>
+     <normaloff>undo.png</normaloff>undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo Output</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo_Output">
+   <property name="icon">
+    <iconset>
+     <normaloff>redo.png</normaloff>redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo Output</string>
+   </property>
+  </action>
+  <action name="actionSource_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>input.png</normaloff>input.png</iconset>
+   </property>
+   <property name="text">
+    <string>Source</string>
+   </property>
+  </action>
+  <action name="actionOutput_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>output.png</normaloff>output.png</iconset>
+   </property>
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
